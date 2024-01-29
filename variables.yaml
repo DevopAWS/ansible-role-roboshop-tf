@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb.daws76.online 
+REDIS_HOST: redis.daws76.online
+MYSQL_HOST: mysql.daws76.online
+RABBITMQ_HOST: rabbitmq.daws76.online
+CATALOGUE_HOST: catalogue.daws76.online
+USER_HOST: user.daws76.online
+CART_HOST: cart.daws76.online
+SHIPPING_HOST: shipping.daws76.online
+PAYMENT_HOST: payment.daws76.online
+DISPATCH_HOST: dispatch.daws76.online
