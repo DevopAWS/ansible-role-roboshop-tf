@@ -8,3 +8,5 @@ CART_HOST: cart.app-dev.daws76.online
 SHIPPING_HOST: shipping.app-dev.daws76.online
 PAYMENT_HOST: payment.app-dev.daws76.online
 DISPATCH_HOST: dispatch.app-dev.daws76.online
+NEXUS_URL: http://3.237.51.129:8081/repository
+group_id: "com/roboshop"
