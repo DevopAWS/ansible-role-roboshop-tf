@@ -1,26 +1,24 @@
-- name: dinstall remi relese
-  ansible.builtin.dnf: 
+- name: install remi release
+  ansible.builtin.dnf: # check pacakge will work not
     name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
     state: present
     disable_gpg_check: true
-      
-
+  
 - name: enable redis
   ansible.builtin.command: dnf module enable redis:remi-6.2 -y
-
 
 - name: install redis
   ansible.builtin.dnf:
     name: redis
     state: present
 
-- name: replace ip address
+- name: allow remote connections
   ansible.builtin.replace:
-    path: /etc/redis.conf
+    path: /etc/redis/redis.conf
     regexp: '127.0.0.1'
     replace: '0.0.0.0'
 
-- name: enable and start redis
+- name: start and enable redis
   ansible.builtin.service:
     name: redis
     state: restarted
